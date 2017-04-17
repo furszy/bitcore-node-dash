@@ -53,12 +53,12 @@ download_bitcoind() {
             echo "Unpacking dash distribution"
             tar -xvzf $tarball_name
             if test $? -eq 0; then
-                ln -sf "dashcore-${version}/bin/dashd"
+                ln -sf "dashcore-${version}/bin/pivxd"
                 return;
             fi
         fi
     fi
-    echo "Dash binary distribution could not be downloaded"
+    echo "PIVX binary distribution could not be downloaded"
     exit -1
 }
 

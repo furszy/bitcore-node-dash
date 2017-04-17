@@ -1,5 +1,5 @@
 {
-  "name": "bitcore-node-dash",
+  "name": "bitcore-node-pivx",
   "description": "Full node with extended capabilities using Bitcore and Dash Core",
   "author": "BitPay <dev@bitpay.com>",
   "version": "3.0.4",
@@ -27,11 +27,10 @@
     }
   ],
   "bin": {
-    "bitcore-node-dash": "./bin/bitcore-node-dash"
+    "bitcore-node-pivx": "./bin/bitcore-node-pivx"
   },
   "scripts": {
-    "preinstall": "./scripts/download",
-    "verify": "./scripts/download --skip-bitcoin-download --verify-bitcoin-download",
+
     "test": "mocha -R spec --recursive",
     "regtest": "./scripts/regtest",
     "jshint": "jshint --reporter=node_modules/jshint-stylish ./lib",
@@ -39,13 +38,11 @@
     "coveralls": "./node_modules/.bin/istanbul cover ./node_modules/mocha/bin/_mocha --report lcovonly -- --recursive -R spec && cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js"
   },
   "tags": [
-    "dash",
-    "dashd"
+    "pivx",
+    "pivxd"
   ],
   "dependencies": {
     "async": "^1.3.0",
-    "bitcoind-rpc-dash": "^0.7.1",
-    "bitcore-lib-dash": "^0.13.20",
     "body-parser": "^1.13.3",
     "colors": "^1.1.2",
     "commander": "^2.8.1",
