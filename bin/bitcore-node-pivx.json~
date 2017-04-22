@@ -1,0 +1,17 @@
+{
+  "network": "livenet",
+  "port": 3001,
+  "services": [
+    "bitcoind",
+    "web",
+    "insight-api-pivx"
+  ],
+  "servicesConfig": {
+    "bitcoind": {
+      "spawn": {
+        "datadir": "/home/mati/Escritorio/pivx_node",
+        "exec": "/home/mati/Escritorio/pivx_node/pivxd"
+      }
+    }
+  }
+}
